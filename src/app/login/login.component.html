@@ -1,0 +1,50 @@
+<section>
+
+    <div class="container">
+        <div class="row" >
+            <div class="col-10 m-5 shadow" >
+                <div class="row">
+                    <div class="col "  style="height: 80vh;">
+                        <div class="alert alert-danger" *ngIf="errorMsg">
+                            {{errorMsg}}
+                        
+                          </div>
+
+                        <h1>Login</h1>
+                        <hr>
+                        <small>Don't have an account? <strong class="text-muted" routerLink='/signup'  >Create your account, </strong> it takes less than a minutes </small> 
+                        <form [formGroup]="registrationForm" (submit)="signIn()" >
+                            <input type="text" class="form-control my-2" placeholder="Email" formControlName="emailLog"  >
+ 
+                            
+                            <input type="text" class="form-control my-2" placeholder=" Password" formControlName="passwordLog">
+                            <div class="d-flex justify-content-end">
+                                <button class="log btn text-light " type="submit">Log in </button>
+                               
+
+                            </div>
+                            
+                        </form>
+
+                    </div>
+                    
+                    <div class="side  col">
+                        
+                        <h1 class="make text-light mx-5 "> <span> <span class="m" >M</span>ake Shopping</span> <br>  Easier with PennyExpress</h1>
+
+                            
+
+                        
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+

@@ -1,0 +1,67 @@
+<section>
+
+
+    <div class="container">
+        <div class="row" >
+            <div class="col-10 m-5 shadow" >
+                <div class="row">
+                    <div class="side  col "  style="height: 80vh;">
+                        <h1 class="make text-light mx-5 "> <span> <span class="m" >M</span>ake Shopping</span> <br>  Easier with PennyExpress</h1>
+
+                    </div>
+                    <div class="col">
+                        <div class="alert alert-danger" *ngIf="errorMsg">
+                            {{errorMsg}}
+                        
+                          </div>
+                        
+                        <h1>Signup</h1>
+                        <hr>
+                        <small>Don't have an account? <strong class="text-muted">Create your account, </strong> it takes less than a minutes </small>
+                     
+                        <form [formGroup]="registrationForm" (submit)="submitForm()">
+                            <input type="text" name="fullName" placeholder="Full name" formControlName="fullName" [class.is-invalid]="fullName?.touched && fullName?.invalid" class="is-invalid form-control">
+                            <div *ngIf="fullName?.touched && fullName?.invalid">
+                                <small *ngIf="fullName?.errors?.['required']"  class="text-danger">full name is required</small>
+                                <small *ngIf="fullName?.errors?.['minlength']" class="text-danger">minimum length is 10</small>
+                            </div>
+                                
+                             <input type="text" name="userName" placeholder="Username" formControlName="userName" [class.is-invalid]="userName?.touched && userName?.invalid" class="is-invalid form-control">
+                             <div *ngIf="userName?.touched && userName?.invalid">
+                                <small *ngIf="userName?.errors?.['required']"  class="text-danger">Username is required</small>
+                                <small *ngIf="userName?.errors?.['minlength']" class="text-danger">minimum length is 8</small>
+                             </div>
+
+
+                            <input type="email" name="email" placeholder="Email Address" formControlName="email" class="is-invalid form-control" [class.is-invalid]="email?.touched && email?.invalid">
+                            <div *ngIf="fullName?.touched && fullName?.invalid">
+
+                                <small *ngIf="email?.errors?.['required']"  class="text-danger">Email is required</small>
+                            </div>
+
+
+                            <input type="password" name="password" placeholder="Password" formControlName="password" class="is-invalid form-control" >
+
+                            <input type="password" name="cPass" placeholder="Confirm Password" formControlName="cPass" class="is-invalid form-control" [class.invalid-input]="registrationForm.errors && registrationForm.errors['misMatch']">
+                            <small *ngIf="registrationForm.errors && registrationForm.errors['misMatch']">Password do not match </small>
+                            <div class="d-flex justify-content-end my-4">
+
+                                <button class="register btn text-light d-flex justify-content-center" type="submit">Register</button>
+                            </div>
+                        </form> 
+                         <p>Already have an account?<b routerLink='/login' >Login</b> </p>    
+                    </div>
+ 
+                            
+                        
+                       
+                    
+                        
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>

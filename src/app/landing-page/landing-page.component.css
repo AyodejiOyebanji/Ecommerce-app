@@ -1,0 +1,92 @@
+.section{
+    background-color: purple; 
+    width: 100%;
+     height: auto;
+     overflow: hidden;
+}
+.navOne{
+    background-color: purple;
+}
+.navtwo{
+    background-color: orange;
+    height: 100px;
+
+}
+.nav-logo{
+    width: 200px;
+    height: auto;
+    }
+.nav-input {
+    width: 30rem!important;
+    
+}
+.dropdownbtn{
+    background-color: purple !important ;
+    font-weight: 600;
+    width: 190px;
+    
+    
+}
+.signUpBtn{
+    background-color: orange;
+    color: white;
+    width: 70%;
+    font-weight: 600;
+
+}
+.cart{
+    width: 60px;
+    height: 50px;
+}
+.carousel{
+    width: 50%;
+    height: 30vh !important;
+    
+}
+.sideLeft{
+    height: 400px;
+    width: 16%;
+    background-color: white;
+    margin-top: -217px;
+    margin-left: 100px;
+    border: thin solid orange;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
+
+}
+
+.my-Ul :hover{
+color: orange;
+transform: scale(1.1);
+} 
+.disp1{
+    height: 170px;
+    width: 170px;
+    background-color: white;
+}
+.two-div{
+
+    margin-left: 1060px;
+    margin-top: -390px;
+   
+}
+.allcard{
+
+    justify-content: space-evenly !important;
+    flex-wrap: wrap;
+
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-img-top{
+    height: 30vh;
+}
+.addToCart{
+    background-color:orange;
+    font-weight: 700;
+}
+
+
+
+
+

@@ -1,0 +1,23 @@
+.addItem{
+    background-color: orange;
+    font-weight: 700;
+    width: 160px;
+    
+}
+.side{
+    height: 80vh;
+    width: 50%;
+    /* background: url("/assets/images/image8.jfif"); */
+     background: linear-gradient(rgba(154, 14, 209, 0.6),rgb(219, 238, 47)), url("/assets/images/admin.jfif");
+      
+      /* background: linear-gradient(rgb(230, 255, 4), rgba(154, 14, 209, 0.6)), url("/assets/images/image8.jfif");    */
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.make{
+    margin-top: 100px;
+}
+.m{
+    font-size: 100px;
+}
