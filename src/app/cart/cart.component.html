@@ -1,0 +1,53 @@
+<div class="body d-flex justify-content-center">
+  <h1 class="text-light">Cart</h1>
+
+ <div class="checkOut">
+   <button class="checkBtn btn text-light w-100">CheckOut</button>
+ </div>
+
+
+  
+  
+
+
+
+  <div class="m-5">
+    <div
+      class="card mb-3"
+      *ngFor="let item of myCartHis; let i = index"
+      style="max-width: 540px"
+    >
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img [src]="item.pimage" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-center">
+              {{ item.name }}
+            </h5>
+            <p class="card-text d-flex justify-content-center">
+              {{ item.price }}
+            </p>
+            <p class="card-text d-flex justify-content-center">
+              <small class="text-muted">{{ item.where }}</small>
+            </p>
+            <div class="d-flex justify-content-center">
+              <span>
+                <button (click)="mysub(i)" [disabled]="item.quan === 1" class="sub btn ">-</button>
+              </span>
+              <span class="quant d-flex justify-content-center" >{{ item.quan }}</span>
+              <!-- <span> {{initialCount}}</span> -->
+              <span>
+                <button (click)="myAdd(i)" class="add btn ">+</button>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</div>
+</div>
+
